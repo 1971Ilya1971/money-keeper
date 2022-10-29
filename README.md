@@ -16,7 +16,7 @@ In  this  project i practiced the basics of JavaScript:
 
 ## Demo 🎥
 
-The completed project can be viewed [here]()
+The completed project can be viewed [here](https://1971ilya1971.github.io/money-keeper/)
 
 ## How to Use 🔧
 
