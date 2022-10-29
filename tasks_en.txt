@@ -1,0 +1,50 @@
+1. In the script file, create 2 variables (money and time) that will receive data from the user:
+	·The first one will ask "Your budget for the month?"
+	·The second one will ask "Enter the date in the format YYYY-MM-DD"
+
+2. Create the appData object that will contain the following data:
+	·budget (from p. 1)
+	·data time - timeData (from p. 1)
+	·object with mandatory expenses - expenses (from item 4)
+	·object with an optional expenses - optional Expenses (temporarily leave blank)
+	·an array of data with additional income - income (temporarily leave blank)
+	·property savings (expose it as false)
+
+3. Ask the user questions 2 times:
+	"Enter the required item of expenditure for this month”
+	“How much will it cost?”
+
+4. Write the answers to the expenses object in the format:
+	expenses: {
+		"answer to the first question”:" answer to the second question”
+	}
+
+5. Display the user's budget for 1 day (take a month for 30 days)
+
+6. Calculate the daily budget and display this value as a single function (detectDayBudget)
+
+7. Write a block of code with the calculation of the level of wealth as a separate function (detectLevel)
+
+8. Create a function to define optional expenses (chooseOptExpenses):
+
+9. It is necessary to ask the user 3 times “The item of optional expenses?"
+Write the responses to the optionalExpenses object in the Number-Response format.
+	optional Expenses: {
+		1 : "answer to the question”
+	}
+
+10. Write a check that the user can:
+	·Enter in the additional income (chooseIncome) only the line
+	·Can't leave a string empty
+
+11. Getting all the necessary layout elements:
+	·To the button "Start calculation" using id;
+	·Get all the blocks on the right side of the program through classes (which have the 	 class "title-value", from <div class="budget-value"></div> and ending with <div 	 class="yearsavings-value"></div>);
+	·Get fields (input) with mandatory spending through the class. (class=”expenses-	 item”);
+	·Get the buttons “Approve” and “Calculate” through the Tag each of its variables;
+	·Get fields for entering optional expenses (optionalexpenses-item) using 	 querySelectorAll;
+	·Get the remaining fields via the querySelector (possible income items, checkbox, 	 	 amount, percentage, year, month, day).
+
+12. If the program is not running yet (you have not clicked the "Start calculation" button), make the other buttons inactive.
+
+13. Implement the functionality: when calculating the daily budget, take into account the amount of mandatory expenses (i.e., from the budget for the month, we subtract the total amount of all mandatory expenses and divide it by 30 days)
